@@ -212,47 +212,140 @@ margin-right: 20px;
 	margin-right: 135px;
 }
 
-
-.styled-button {
-  padding: 15px;
-  font-size: 16px;
-  cursor: pointer;
+/* Estilos para el botón de contacto */
+.btn-contact {
+  padding: 10px;
+  background-color: #007bff;
   border: none;
-  border-radius: 8px;
-  background-color: #4CAF50;
-  color: white;
-  transition: background-color 0.3s;
-  position: relative; /* Es importante para que el recuadro se posicione correctamente */
-}
-
-.styled-button:hover {
-  background-color: #45a049;
-}
-
-/* Estilo para el recuadro */
-.movable {
-  width: 200px;
+  cursor: pointer;
+  border-radius: 50%; /* Botón redondeado */
+  width: 150px; /* Ajusta el tamaño según el icono */
   height: 150px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 2px solid #4CAF50;
-  position: fixed;
-  display: none; /* Inicialmente está oculto */
-  cursor: default;
-  z-index: 10; /* Asegura que el recuadro se muestre por encima del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transición para el hover y clic */
 }
 
-
-
-/* Efecto al pasar el ratón */
-.styled-button:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.btn-icon {
+  width: 115px;
+  height: 115px;
+  transition: transform 0.2s ease; /* Suavizar icono en hover */
 }
 
-/* Efecto al hacer clic */
-.styled-button:active {
-	transform: scale(0.95);
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+/* Animación al pasar el ratón (hover) */
+.btn-contact:hover {
+  background-color: #0056b3; /* Cambia el color en hover */
+}
+
+.btn-contact:hover .btn-icon {
+  transform: scale(1.1); /* Agranda el icono un 10% en hover */
+}
+
+/* Animación al hacer clic */
+.btn-contact:active {
+  transform: scale(0.9); /* Reduce ligeramente el tamaño en clic */
+}
+
+/* Animación de "rebote" al hacer clic */
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplicar la animación de rebote */
+.btn-contact:active {
+  animation: bounce 0.2s;
+}
+
+/* Animación de desvanecimiento y deslizamiento */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Comienza un poco más arriba */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Termina en su posición final */
+  }
+}
+
+/* Estilos para el formulario de contacto */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+  opacity: 0; /* Inicialmente invisible */
+  transform: translateY(-20px); /* Inicialmente más arriba */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form.show {
+  opacity: 1; /* Se vuelve visible */
+  transform: translateY(0); /* Desliza hacia abajo */
+}
+
+/* Animación de desvanecimiento y deslizamiento */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Comienza un poco más arriba */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Termina en su posición final */
+  }
+}
+.contact-item .icon {
+  width: 20px; /* Tamaño del icono */
+  height: 20px;
+  margin-right: 8px;
+}
+
+.contact-form h3 {
+  margin-top: 0;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
 
 
