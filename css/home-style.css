@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'pFont';
+    src: url('../font/Heylabs Stroyed.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .tbl{
 	display:flex;
 	flex-direction: column;
@@ -7,10 +19,10 @@
 	display: flex;
 	justify-content: space-around;
 	height: 100%;
-	background-image: url('../imagenes/fondo_ventana.webp');
+	background-image: url('../imagenes/fondo_ventana-mobile.webp');
 	background-size: cover;
-	background-position: center; 
-	background-repeat: no-repeat; 
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .tbl .tbl_arr .clm_izq{
@@ -30,7 +42,7 @@
 	font-size: 52px;
 	text-align: center;
 	margin: 41px 18px 0px 16px;
-	font-family: sans-serif;
+	font-family: 'pFont';
 	color: e12a2a;
 }
 
@@ -46,6 +58,7 @@
 .tbl .tbl_arr .clm_med .clm_med_fondo{
 	background: #f6f6f6;
 	border-radius:35px;
+	margin-top: 100px;
 }
 
 .tbl .tbl_arr .clm_med .clm_med_fondo .titulo_med{
@@ -63,7 +76,7 @@
 .tbl .tbl_arr .clm_med .clm_med_fondo .titulo_med h2{
 	margin: 0px 0px 20px 0px;
 	font-size: 100px;
-	font-family: sans-serif;
+	font-family: 'pFont';
 }
 
 .tbl .tbl_arr .clm_med .clm_med_fondo .lista_med{
@@ -76,7 +89,7 @@
 	text-align: center;
 	margin: 0;
 	font-size: 38px;
-	font-family: sans-serif;
+	font-family: 'pFont';
 }
 .tbl .tbl_arr .clm_med .clm_med_fondo .lista_servicios{
 	margin-top: 10px;
@@ -84,7 +97,7 @@
 	text-align: center;
 	font-size: 31px;
 	margin-left: -41px;
-	font-family: sans-serif;
+	font-family: 'pFont';
 }
 .tbl .tbl_arr .clm_med .clm_med_fondo .lista_servicios li{
 	margin-bottom: 55px;
@@ -118,7 +131,7 @@ margin-right: 20px;
 	margin: 0px;
 	margin-top: 0px;
 	font-size: 41px;
-	font-family: sans-serif;
+	font-family: 'pFont';
 }
 
 .tbl .tbl_arr .clm_der .texto-arr .text-rotate .texto-azul{
@@ -148,6 +161,7 @@ margin-right: 20px;
 
 .tbl .tbl_arr .clm_der .texto-med .texto p{
 	margin:3px;
+	font-family: 'pFont';
 }
 
 .tbl .tbl_arr .clm_der .texto-med .texto .texto-dos{
@@ -178,20 +192,20 @@ margin-right: 20px;
 .tbl .tbl_abj .clm_abj{
 	height: 100%;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .tbl .tbl_abj .clm_abj .distribuidor{
 	display:flex;
-	align-items: center;
-	margin-left: 100px;
+	margin-left: 28px;
+	flex-direction: column;
 }
 
 .tbl .tbl_abj .clm_abj .distribuidor .texto-dis{display: flex;margin-right: 25px;margin-top: 5px;}
 
 .tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-uno,
 .tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-dos{
-	font-size: 40px;
+	font-size: 49px;
 }
 .tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-uno{
 	color: #0078C0;
@@ -201,6 +215,7 @@ margin-right: 20px;
 }
 
 .tbl .tbl_abj .clm_abj .distribuidor .imagen-dis{
+	
 }
 
 
