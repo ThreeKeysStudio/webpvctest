@@ -220,24 +220,24 @@ margin-bottom: 55px;
 
 
 .tbl .contacto{
-	position: fixed;
+	position: absolute;
 	bottom: 25px;
 	right: 25px;
 }
 
-/* Estilos para el botón de contacto */
+/* Estilos para el botÃ³n de contacto */
 .btn-contact {
   padding: 10px;
   background-color: #007bff;
   border: none;
   cursor: pointer;
-  border-radius: 50%; /* Botón redondeado */
-  width: 150px; /* Ajusta el tamaño según el icono */
+  border-radius: 50%; /* BotÃ³n redondeado */
+  width: 150px; /* Ajusta el tamaÃ±o segÃºn el icono */
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition: background-color 0.3s ease, transform 0.2s ease; */ /* Transición para el hover y clic */
+  /* transition: background-color 0.3s ease, transform 0.2s ease; */ /* TransiciÃ³n para el hover y clic */
 }
 
 .btn-icon {
@@ -246,7 +246,7 @@ margin-bottom: 55px;
   transition: transform 0.2s ease; /* Suavizar icono en hover */
 }
 
-/* Animación al pasar el ratón (hover) */
+/* AnimaciÃ³n al pasar el ratÃ³n (hover) */
 .btn-contact:hover {
   background-color: #0056b3; /* Cambia el color en hover */
 }
@@ -255,7 +255,7 @@ margin-bottom: 55px;
   transform: scale(1.1); /* Agranda el icono un 10% en hover */
 }
 
-/* Animación de "rebote" al hacer clic */
+/* AnimaciÃ³n de "rebote" al hacer clic */
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -268,20 +268,20 @@ margin-bottom: 55px;
   }
 }
 
-/* Aplicar la animación de rebote */
+/* Aplicar la animaciÃ³n de rebote */
 .btn-contact:active {
   animation: bounce 0.2s;
 }
 
-/* Animación de desvanecimiento y deslizamiento */
+/* AnimaciÃ³n de desvanecimiento y deslizamiento */
 @keyframes slideDownFade {
   0% {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza un poco más arriba */
+    transform: translateY(-20px); /* Comienza un poco mÃ¡s arriba */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Termina en su posición final */
+    transform: translateY(0); /* Termina en su posiciÃ³n final */
   }
 }
 
@@ -298,20 +298,54 @@ margin-bottom: 55px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: absolute;
   z-index: 10;
-  opacity: 0; /* Inicialmente invisible */
-  transform: translateY(-20px); /* Inicialmente más arriba */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  
 }
 
 .contact-form.show {
-  opacity: 1; /* Se vuelve visible */
-  transform: translateY(0); /* Desliza hacia abajo */
+  opacity: 1;
+  animation: openForm 0.3s ease 0s 1 normal forwards;
   position: absolute;
   right: 0px;
   bottom: 160;
   font-size: 42px;
 }
 
+.contact-form.hidden {
+  animation: closeForm 0.3s ease 0s 1 normal forwards;
+  opacity: 1; 
+  position: absolute;
+  right: 0px;
+  bottom: 160;
+  font-size: 42px;
+}
+.contact-form.hidden_first {
+  display:none;
+}
+
+@keyframes openForm {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes closeForm {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+}
 .contact-item{
 	display:flex;
 	align-items: center;
@@ -321,19 +355,19 @@ margin-bottom: 55px;
 	margin-left: 11px;
 }
 
-/* Animación de desvanecimiento y deslizamiento */
+/* AnimaciÃ³n de desvanecimiento y deslizamiento */
 @keyframes slideDownFade {
   0% {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza un poco más arriba */
+    transform: translateY(-20px); /* Comienza un poco mÃ¡s arriba */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Termina en su posición final */
+    transform: translateY(0); /* Termina en su posiciÃ³n final */
   }
 }
 .contact-item .icon {
-  width: 80px; /* Tamaño del icono */
+  width: 80px; /* TamaÃ±o del icono */
   height: 80px;
   margin-right: 8px;
 }
@@ -365,18 +399,17 @@ margin-bottom: 55px;
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
+@media (min-width: 768px) {
+	
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 	.tbl .tbl_arr{
 	flex-direction: column;
 	}
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 993px) {
 	.tbl .tbl_arr{
 		align-items: center;
 	}
