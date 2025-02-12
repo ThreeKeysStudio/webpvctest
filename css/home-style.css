@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
 	}
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
 	.tbl .tbl_arr{
 	flex-direction: column;
 	}
@@ -17,11 +17,12 @@ body {
 	.tbl{
 		display:flex;
 		flex-direction: column;
+		height: -webkit-fill-available;
 	}
 	.tbl .tbl_arr{
 		display: flex;
 		justify-content: space-around;
-		height: 100%;
+		height: max-content;
 		background-image: url('../imagenes/fondo_ventana-mobile.webp');
 		background-size: cover;
 		background-position: center;
@@ -187,12 +188,12 @@ body {
 	}
 	
 	.tbl .tbl_abj{
-		height: auto;
+		height: -webkit-fill-available;
 		background: #1e1d1c;
 	}
 	
 	.tbl .tbl_abj .clm_abj{
-		height: 100%;
+		height: auto;
 		display: flex;
 	}
 	
@@ -218,12 +219,12 @@ body {
 	
 	.tbl .tbl_abj .clm_abj .distribuidor .imagen-dis{
 		
-	margin-bottom: 55px;
+margin-bottom: 32px;
 	}
 
 }
 
-@media (min-width: 993px) {
+@media (min-width:1200px) {
 	.tbl .tbl_arr{
 		align-items: center;
 	}
@@ -231,16 +232,18 @@ body {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	height: -webkit-fill-available;
+	width: -webkit-fill-available;
 	}
 	.tbl .tbl_arr{
 		display: flex;
 		justify-content: space-around;
-		height: auto;
-		width: -webkit-fill-available;
 		background-image: url('../imagenes/fondo_ventana.webp');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
+		height: -webkit-fill-available;
+		width: -webkit-fill-available;
 	}
 	
 	.tbl .tbl_arr .clm_izq{
