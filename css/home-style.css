@@ -59,7 +59,7 @@ body {
 	}
 	
 	.tbl .tbl_arr .clm_med .clm_med_fondo{
-		background: #f6f6f6;
+		background: rgba(256, 256, 256, 0.5);
 		border-radius:35px;
 		margin-top: 100px;
 		width: min-content;
@@ -99,7 +99,7 @@ body {
 		margin-top: 10px;
 		list-style-type: none;
 		text-align: center;
-		font-size: 31px;
+		font-size: 35px;
 		margin-left: -41px;
 		font-family: 'pFont';
 	}
@@ -122,16 +122,18 @@ body {
 	
 	.tbl .tbl_arr .clm_der .texto-arr .text-rotate {
 		
-	text-align: center;
+text-align: center;
 		
-	margin-top: 56px;
+margin-top: 56px;
 		
-	margin-right: 20px;
+margin-bottom: 24px;
+		
+margin-right: 20px;
 	}
 	
 	.tbl .tbl_arr .clm_der .texto-arr .text-rotate .texto-amarillo,
 	.tbl .tbl_arr .clm_der .texto-arr .text-rotate .texto-azul{
-		transform: rotate(20deg);
+		transform: rotate(7deg);
 		margin: 0px;
 		margin-top: 0px;
 		font-size: 41px;
@@ -152,12 +154,13 @@ body {
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
+		margin-top: 30px;
 	}
 	
 	.tbl .tbl_arr .clm_der .texto-med .texto{
 		width: fit-content;
-		font-size: 65px;
+		font-size: 45px;
 		text-align: center;
 		border-radius: 44px;
 		border: 1px solid grey;
@@ -177,6 +180,7 @@ body {
 		flex: 1;
 		display: flex;
 		align-items: flex-end;
+		flex-direction: row-reverse;
 	}
 	
 	.tbl .tbl_arr .clm_der .texto-abj .texto{
