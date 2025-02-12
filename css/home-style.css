@@ -62,6 +62,7 @@ body {
 		background: #f6f6f6;
 		border-radius:35px;
 		margin-top: 100px;
+		width: min-content;
 	}
 	
 	.tbl .tbl_arr .clm_med .clm_med_fondo .titulo_med{
@@ -103,7 +104,7 @@ body {
 		font-family: 'pFont';
 	}
 	.tbl .tbl_arr .clm_med .clm_med_fondo .lista_servicios li{
-		margin-bottom: 55px;
+	margin: 49px 46px;
 	}
 	.tbl .tbl_arr .clm_der{
 		flex: 1;
@@ -318,7 +319,7 @@ margin-bottom: 32px;
 		font-family: sans-serif;
 	}
 	.tbl .tbl_arr .clm_med .clm_med_fondo .lista_servicios li{
-		margin-bottom: 55px;
+		margin: 46px 55px;
 	}
 	.tbl .tbl_arr .clm_der{
 		flex: 1;
@@ -466,19 +467,19 @@ margin-bottom: 32px;
 	right: 25px;
 }
 
-/* Estilos para el botÃƒÂ³n de contacto */
+/* Estilos para el botÃƒÆ’Ã‚Â³n de contacto */
 .btn-contact {
   padding: 10px;
   background-color: #007bff;
   border: none;
   cursor: pointer;
-  border-radius: 50%; /* BotÃƒÂ³n redondeado */
-  width: 150px; /* Ajusta el tamaÃƒÂ±o segÃƒÂºn el icono */
+  border-radius: 50%; /* BotÃƒÆ’Ã‚Â³n redondeado */
+  width: 150px; /* Ajusta el tamaÃƒÆ’Ã‚Â±o segÃƒÆ’Ã‚Âºn el icono */
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* transition: background-color 0.3s ease, transform 0.2s ease; */ /* TransiciÃƒÂ³n para el hover y clic */
+  /* transition: background-color 0.3s ease, transform 0.2s ease; */ /* TransiciÃƒÆ’Ã‚Â³n para el hover y clic */
 }
 
 .btn-icon {
@@ -487,7 +488,7 @@ margin-bottom: 32px;
   transition: transform 0.2s ease; /* Suavizar icono en hover */
 }
 
-/* AnimaciÃƒÂ³n al pasar el ratÃƒÂ³n (hover) */
+/* AnimaciÃƒÆ’Ã‚Â³n al pasar el ratÃƒÆ’Ã‚Â³n (hover) */
 .btn-contact:hover {
   background-color: #0056b3; /* Cambia el color en hover */
 }
@@ -496,7 +497,7 @@ margin-bottom: 32px;
   transform: scale(1.1); /* Agranda el icono un 10% en hover */
 }
 
-/* AnimaciÃƒÂ³n de "rebote" al hacer clic */
+/* AnimaciÃƒÆ’Ã‚Â³n de "rebote" al hacer clic */
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -509,20 +510,20 @@ margin-bottom: 32px;
   }
 }
 
-/* Aplicar la animaciÃƒÂ³n de rebote */
+/* Aplicar la animaciÃƒÆ’Ã‚Â³n de rebote */
 .btn-contact:active {
   animation: bounce 0.2s;
 }
 
-/* AnimaciÃƒÂ³n de desvanecimiento y deslizamiento */
+/* AnimaciÃƒÆ’Ã‚Â³n de desvanecimiento y deslizamiento */
 @keyframes slideDownFade {
   0% {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza un poco mÃƒÂ¡s arriba */
+    transform: translateY(-20px); /* Comienza un poco mÃƒÆ’Ã‚Â¡s arriba */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Termina en su posiciÃƒÂ³n final */
+    transform: translateY(0); /* Termina en su posiciÃƒÆ’Ã‚Â³n final */
   }
 }
 
@@ -596,19 +597,19 @@ margin-bottom: 32px;
 	margin-left: 11px;
 }
 
-/* AnimaciÃƒÂ³n de desvanecimiento y deslizamiento */
+/* AnimaciÃƒÆ’Ã‚Â³n de desvanecimiento y deslizamiento */
 @keyframes slideDownFade {
   0% {
     opacity: 0;
-    transform: translateY(-20px); /* Comienza un poco mÃƒÂ¡s arriba */
+    transform: translateY(-20px); /* Comienza un poco mÃƒÆ’Ã‚Â¡s arriba */
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Termina en su posiciÃƒÂ³n final */
+    transform: translateY(0); /* Termina en su posiciÃƒÆ’Ã‚Â³n final */
   }
 }
 .contact-item .icon {
-  width: 80px; /* TamaÃƒÂ±o del icono */
+  width: 80px; /* TamaÃƒÆ’Ã‚Â±o del icono */
   height: 80px;
   margin-right: 8px;
 }
