@@ -175,6 +175,8 @@ body {
 	}
 	.tbl .tbl_arr .clm_der .texto-abj{
 		flex: 1;
+		display: flex;
+		align-items: flex-end;
 	}
 	
 	.tbl .tbl_arr .clm_der .texto-abj .texto{
