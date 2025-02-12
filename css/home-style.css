@@ -412,7 +412,7 @@ body {
 		width: -webkit-fill-available;
 		display: flex;
 		align-items: center;
-		gap: 220px;
+		/* gap: 1200px; */
 	}
 	
 	.tbl .tbl_abj .clm_abj{
@@ -602,7 +602,7 @@ body {
 .contact-item{
 	display:flex;
 	align-items: center;
-	margin-bottom: 30px;
+	margin-bottom: 33px;
 }
 .contact-item .txt_contc{
 	margin-left: 11px;
