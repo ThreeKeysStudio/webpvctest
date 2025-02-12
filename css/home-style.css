@@ -434,6 +434,7 @@ margin-right: 20px;
 		display:flex;
 		align-items: center;
 		margin-left: 38px;
+		flex-direction: column;
 	}
 	
 	.tbl .tbl_abj .clm_abj .distribuidor .texto-dis{display: flex;margin-right: 25px;margin-top: 10px;}
@@ -469,6 +470,14 @@ margin-right: 20px;
 	.contact-form-out .contc-frm .bloque-contacto{
 		margin-right: 56px;
 	}
+	.tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-uno,
+	.tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-dos{
+		font-size: 32px;
+	}
+	.imagen-dis{
+		width: 360px;
+		height: auto;
+	}
 }
 @media (min-width: 1600px) {
 	.tbl .tbl_abj .clm_abj .distribuidor .texto-dis .texto-uno,
@@ -479,6 +488,30 @@ margin-right: 20px;
 @media (min-width: 1920px) {
 	.contact-form-out{
 		margin-right: 150px;
+	}
+	.tbl .tbl_arr .clm_der .texto-abj .texto{
+		display:flex;
+		flex-direction: column;
+		margin-top: 63px;
+		width: max-content;
+		font-size: 35px;
+		color: #F69E09;
+		background: rgba(256, 256, 256, .65);
+		border-radius:35px 35px 0 0;
+	}
+	.tbl .tbl_arr .clm_der .texto-abj{
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.tbl .tbl_arr .clm_der .texto-med{
+		flex: 1;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
 	}
 }
 
@@ -618,6 +651,7 @@ margin-right: 20px;
 .contact-item .txt_contc{
 	margin-left: 11px;
 	color: #0078C0;
+	font-size: 24px;
 }
 
 /* AnimaciÃƒÆ’Ã‚Â³n de desvanecimiento y deslizamiento */
