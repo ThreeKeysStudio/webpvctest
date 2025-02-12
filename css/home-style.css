@@ -34,6 +34,7 @@ body {
 		flex-direction: column;
 		align-items: stretch;
 		justify-content: flex-end;
+		height: 0;
 	}
 	
 	.tbl .tbl_arr .clm_izq .imagen_izq{
@@ -178,7 +179,7 @@ body {
 	.tbl .tbl_arr .clm_der .texto-abj .texto{
 		display:flex;
 		flex-direction: column;
-		margin-top: 130px;
+		margin-top: 85px;
 		margin-right: 22px;
 		font-size: 43px;
 		color: #F69E09;
